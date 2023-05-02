@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMBD Home</title>
+    <!-- linking all styling pages -->
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./../css/favorite.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/movie.css">
+
+    <!-- linking a jquery library just for learning purpose -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    
+
+</head>
+<body>
+    
+
+    <!-- header division  -->
+    <header>
+        <div class="">
+            <h2>OMDB MOVIES</h2>
+            <button id="favbtn"> Favorites </button>
+            <button id="homebtn"> Home </button>
+        </div>
+        <div class="searchbox">
+            <label>Type Something </label>
+            <input id="searchInput" type="text" placeholder="type to search">
+            <button type="submit" id="searchSubmitBtn">Search</button>
+        </div>
+    </header>
+
+    <!-- for home page -->
+    <main id="root">
+
+    </main>
+
+    <!-- for favorite page -->
+    <main id="favRoot">
+
+    </main>
+
+    <!-- for specific movie page -->
+    <main id="movieRoot">
+
+        <!-- single layout for movie root and elements designs -->
+        <div id="top">
+            <img id="movieImgUrl" src="" alt="">
+            <div id="MovieContent">
+
+                <div class="details">
+                    <label for="">Movie Name : </label>
+                    <p id="moviename">Avengers : Age of ultron</p>
+                </div>
+                <div class="details">
+                    <label for="">Year : </label>
+                    <p id="movieyear">2012</p>
+                </div>
+                <div id="buttonholder">
+                    <button>Download</button>
+                </div>
+                <div id="space"></div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+    <!-- linking a main script -->
+    <script src="./js/home.js"></script>
+
+</html>

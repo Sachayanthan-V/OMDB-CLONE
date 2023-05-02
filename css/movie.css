@@ -1,0 +1,89 @@
+/* body styling to make all elements fix to center */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* movie section styling */
+#movieRoot {
+  margin: 6vh;
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+/* movie top aligning and their sibling and child styling down below */
+#movieRoot #top {
+  height: 80vh;
+  display: flex;
+}
+#movieRoot #top img, #movieRoot #top #MovieContent {
+  width: 40vw;
+  height: 100%;
+}
+#movieRoot #top img {
+  background-color: rgb(198, 194, 194);
+}
+#movieRoot #top #MovieContent {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+#movieRoot #top div {
+  width: 90%;
+  padding: 5%;
+  display: flex;
+}
+#movieRoot #top div label, #movieRoot #top div p {
+  padding: 3px;
+  font-size: 20px;
+  font-weight: 600;
+}
+#movieRoot #top div label {
+  color: purple;
+}
+#movieRoot #top .details {
+  background-color: white;
+  flex-direction: column;
+}
+#movieRoot #buttonholder {
+  width: 50vh;
+}
+#movieRoot #buttonholder button {
+  padding: 10px 15px;
+  margin: 10px;
+  background-color: green;
+}
+#movieRoot #buttonholder button:hover {
+  color: green;
+  background-color: white;
+}
+/* anchor sytling on like and dislike button :revited this buttons on html page */
+#movieRoot #buttonholder a {
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  background-color: hotpink;
+}
+#movieRoot #buttonholder a:hover {
+  background-color: white;
+  color: red;
+}
+
+/* button styling on specific movie page */
+button, a {
+  text-align: center;
+  min-width: 70px;
+  color: white;
+  border: 0px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s linear !important;
+}/*# sourceMappingURL=movie.css.map */

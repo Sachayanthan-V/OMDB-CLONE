@@ -1,0 +1,100 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* header section assigning to the top of the website */
+header {
+  height: 8vh;
+  width: 100vw;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* header text */
+header h2 {
+  color: purple;
+  margin-left: 15px;
+}
+
+/* header search box */
+header .searchbox {
+  background-color: azure;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/* header divisions to spilit up on both sides */
+header div {
+  display: flex;
+  margin-right: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* header input styling */
+header div input {
+  padding: 5px 10px;
+  min-width: 400px;
+}
+header div label {
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+/* button styling */
+header button {
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: white;
+  font-weight: 600;
+  color: orange;
+}
+header button:hover {
+  background-color: orange;
+  color: white;
+}/*# sourceMappingURL=header.css.map */
+
+
+/* stlying for responsible design desktop , tab, and mobile [cross-platform design] */
+@media screen and (max-width : 1000px) {
+
+  header div input {
+    min-width: 200px;
+    font-size: 13px;
+  }
+
+  header h2 {
+    font-size: 14px;
+  }
+
+  header button {
+    font-size: 14px;
+    text-align: center;
+    min-width: fit-content;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    justify-content: space-around;
+  }
+
+  #movieRoot div {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+/* stlying for responsible design desktop , tab, and mobile [cross-platform design] */
+@media screen and (max-width : 500px) {
+  header div input {
+    min-width: 150px;
+    font-size: 12px;
+  }
+}

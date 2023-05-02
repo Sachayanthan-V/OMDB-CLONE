@@ -1,0 +1,90 @@
+/* making flex main for orientation of div and elements */
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .movieContent {
+  margin: 20px 15px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 15px;
+  width: 250px;
+}
+/* img view on each div */
+main .movieContent img {
+  min-width: 250px;
+  min-height: 200px;
+  max-width: 250px;
+  max-height: 200px;
+  background-size: cover;
+  background-color: #CDCBCB;
+}
+/* button designs */
+main .movieContent .buttonClass {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* download button styling */
+main .movieContent .buttonClass .download {
+  width: 75%;
+  padding: 10px 10px;
+  background-color: green;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: 0px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+main .movieContent .buttonClass .download:hover {
+  color: green;
+  background-color: white;
+}
+
+body, main {
+  overflow: scroll;
+}
+body::-webkit-scrollbar, main::-webkit-scrollbar {
+  display: none;
+}
+
+/* like and dislike buttons styling continuing with hovering effect */
+.like, .dislike, .dislikeFav {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  text-align: center;
+  border: 0px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: white;
+  color: hotpink;
+  transition: all 0.3s linear;
+}
+.like:hover, .dislike:hover, .dislikeFav:hover {
+  border-radius: 20%;
+  background-color: hotpink;
+  color: white;
+}
+
+.dislike {
+  display: none;
+}
+
+.dislike, .dislikeFav {
+  color: red;
+}
+.dislike:hover, .dislikeFav:hover {
+  background-color: red;
+  color: white;
+}
+
+.hidden {
+  display: hidden !important;
+}/*# sourceMappingURL=home.css.map */
