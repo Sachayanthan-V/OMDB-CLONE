@@ -167,7 +167,7 @@ function makedislikeusingmyfavArray(){
 // on search bar change event listening for make a api call and add those elements with the rendered value on home page
 async function onSearchChange(){
     let root = document.getElementById('root');    
-    let searchValue = `http://www.omdbapi.com/?apikey=6b786f7b&s=avengers`;
+    let searchValue = `https://www.omdbapi.com/?apikey=6b786f7b&s=avengers`;
     let searchInput = document.getElementById('searchInput');
     console.log("entered");
     idholder = []
